@@ -1,3 +1,5 @@
+Sistema recomendador usando un dataset similar al de Movielens pero usando CSVs de animes y utilizando Apache Spark en la ejecución del algoritmo ALS.
+
 ## venv
 
 Necesitas la herramienta virtualenv `pip install virtualenv`

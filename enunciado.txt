@@ -1,0 +1,20 @@
+ENUNCIADO
+
+Dentro del bloque de la tarea encontrarás un archivo ZIP que contiene 3 ficheros (de unos 800 MB en total) con información de valoraciones sobre series y películas de anime:
+
+    anime.csv: Fichero información de series, películas, OVAS, etc. Tiene información con el título original y el título en inglés, el número de episodios, el estudio, la fecha de emisión, los géneros, duración, calificación por edades, etc.
+    rating_complete.csv: Fichero con valoraciones de usuarios de la forma id_usuario, id_anime, nota (de 0 a 10)
+    valoraciones_EP.csv: Igual que el fichero anterior pero sólo con los datos del usuario 666666 (usuario anónimo del que sólo sabemos que sus iniciales son EP)
+
+Crear un programa con Spark ML y el algoritmo de recomendación ALS que genere un listado con 5 serie de TV y 5 películas para recomendar al usuario EP (con id 666666) para ello se deben incorporar lasa valoraciones de EP al fichero de valoraciones total, entrenar el algoritmo y pedirle un listado de recomendaciones para ese usuario. Las recomendaciones generadas deben incluir el ID del anime y los títulos original (name) y en inglés (English name).
+
+Consideraciones a tener en cuenta:
+
+    Hay que generar dos listados de recomendaciones. Uno con series y otro con películas.
+    Al cargar los datos del CSV, hay que tener en cuenta que hay muchos caracteres no ASCII, por lo que se debe leer el archivo usando una codificación de caracteres adecuada.
+    Los títulos que contienen una coma, en el CSV están entrecomillados.
+    Los títulos que tienen comillas, en el CSV aparecen con dobles comillas.
+
+ENTREGA
+
+Subir al Campus virtual una memoria explicando el trabajo (describiendo os datos, el pre-procesado que se ha hecho, el entorno que se ha utilizado, etc.), el archivo con el código (.py o .ipynb) y dos archivos txt con las recomendaciones: uno de series y otro de películas.

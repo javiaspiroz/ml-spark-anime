@@ -4,6 +4,8 @@ from pyspark.sql import Row
 from pyspark import SparkConf, SparkContext
 from pyspark.sql import SparkSession
 
+spark = SparkSession.builder.master("local[*]").getOrCreate()
+
 # lines = spark.read.text("data/mllib/als/sample_movielens_ratings.txt").rdd
 # lines = spark.read.csv("gs://bucket-gvd-21957644/ml-latest-small/ratings.csv")
 lines = spark.read.text("gs://bucket-gvd-21957644/ml-latest-small/ratings.csv").rdd

@@ -2,3 +2,4 @@ venv/
 dataset_valoraciones_anime/rating_complete.csv
 dataset_valoraciones_anime/rating_complete_original.csv
 message.py
+dataset_valoraciones_anime/rating_red.csv

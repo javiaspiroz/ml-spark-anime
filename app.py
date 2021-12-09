@@ -22,6 +22,7 @@ ratingsMovies= ratings.filter(ratings['Type']=="Movie")
 ratingsMovies.show()
 ratings = [ratingsMovies,ratingsTV]
 
+i=0 # Contador para escribir el fichero final
 for df in ratings:
     # Dividimos los dataframes en test y training
     (training,test) = df.randomSplit([0.8, 0.2])
@@ -40,9 +41,11 @@ for df in ratings:
         recommendations.append(movie['anime_id'])
     print(recommendations)
     result = animes.filter((animes.ID).isin(recommendations)).select('ID','English name','Japanese name')
-    # for i in result:
-    #     print(i)
-
-    
-# Para terminar el proceso de Spark
-spark.stop()
+    result.show()
+    # Creamos el archivo .txt de salida
+    # result.write.text(str(i))
+    if i==0:
+        result.write.csv("movies.csv", header=True)
+    else:
+        result.write.csv("tv.csv", header=True)
+    i=+1

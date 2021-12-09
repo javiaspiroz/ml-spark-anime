@@ -28,10 +28,21 @@ for df in ratings:
     # Entrenamos el modelo, se usa coldstart con drop para descartar Nan
     als = ALS(maxIter=5, regParam=0.01, userCol="user_id", itemCol="anime_id", ratingCol="rating", coldStartStrategy="drop")
     model=als.fit(training)
+    # Evaluamos el modelo con RMSE
+    predictions = model.transform(test)
+    evaluator = RegressionEvaluator(metricName="rmse", labelCol="rating", predictionCol="prediction")
+    rmse = evaluator.evaluate(predictions)
+    users = df.filter(df["user_id"]==666666)
+    userSubsetRecs = model.recommendForUserSubset(users, 5)
+    movies=userSubsetRecs.first()['recommendations']
+    recommendations=[]
+    for movie in movies:
+        recommendations.append(movie['anime_id'])
+    print(recommendations)
+    result = animes.filter((animes.ID).isin(recommendations)).select('ID','English name','Japanese name')
+    # for i in result:
+    #     print(i)
+
     
-    
-
-
-
 # Para terminar el proceso de Spark
 spark.stop()

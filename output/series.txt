@@ -1,0 +1,6 @@
+     ID                               Name   Japanese name Type
+0  2150               Tanoshii Muumin Ikka       楽しいムーミン一家   TV
+1  5712  Tanoshii Muumin Ikka Bouken Nikki  楽しいムーミン一家 冒険日記   TV
+2   135                       Hikaru no Go           ヒカルの碁   TV
+3  6774                    Kuuchuu Buranko          空中ブランコ   TV
+4   156                                  X         X−エックス−   TV

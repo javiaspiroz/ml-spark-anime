@@ -1,6 +1,6 @@
-     ID                               Name   Japanese name Type
-0  2150               Tanoshii Muumin Ikka       楽しいムーミン一家   TV
-1  5712  Tanoshii Muumin Ikka Bouken Nikki  楽しいムーミン一家 冒険日記   TV
-2   135                       Hikaru no Go           ヒカルの碁   TV
-3  6774                    Kuuchuu Buranko          空中ブランコ   TV
-4   156                                  X         X−エックス−   TV
+      ID                        Name     Japanese name Type                                                  Image                                    Trailer
+0  28977                    Gintama°               銀魂°   TV   https://cdn.myanimelist.net/images/anime/3/72078.jpg                                       None
+1    790                  Ergo Proxy          エルゴプラクシー   TV   https://cdn.myanimelist.net/images/anime/11/6259.jpg  https://www.youtube.com/embed/kL0j06Byjjs
+2    245       Great Teacher Onizuka  グレート・ティーチャー・オニヅカ   TV  https://cdn.myanimelist.net/images/anime/13/11460.jpg                                       None
+3   2001  Tengen Toppa Gurren Lagann        天元突破グレンラガン   TV    https://cdn.myanimelist.net/images/anime/4/5123.jpg  https://www.youtube.com/embed/rAQylCHv8Cw
+4   9253                 Steins;Gate       STEINS;GATE   TV   https://cdn.myanimelist.net/images/anime/5/73199.jpg  https://www.youtube.com/embed/27OZc-ku6is

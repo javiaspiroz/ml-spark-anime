@@ -1,6 +1,6 @@
-      ID                        Name     Japanese name Type                                                  Image                                    Trailer
-0  28977                    Gintama°               銀魂°   TV   https://cdn.myanimelist.net/images/anime/3/72078.jpg                                       None
-1    790                  Ergo Proxy          エルゴプラクシー   TV   https://cdn.myanimelist.net/images/anime/11/6259.jpg  https://www.youtube.com/embed/kL0j06Byjjs
-2    245       Great Teacher Onizuka  グレート・ティーチャー・オニヅカ   TV  https://cdn.myanimelist.net/images/anime/13/11460.jpg                                       None
-3   2001  Tengen Toppa Gurren Lagann        天元突破グレンラガン   TV    https://cdn.myanimelist.net/images/anime/4/5123.jpg  https://www.youtube.com/embed/rAQylCHv8Cw
-4   9253                 Steins;Gate       STEINS;GATE   TV   https://cdn.myanimelist.net/images/anime/5/73199.jpg  https://www.youtube.com/embed/27OZc-ku6is
+      ID                    Name             Japanese name Type                                                    Image                                    Trailer
+0  12883               Tsuritama                       つり球   TV     https://cdn.myanimelist.net/images/anime/4/69909.jpg  https://www.youtube.com/embed/pn-BDOSDDa4
+1   1690               Bokura no                      ぼくらの   TV  https://cdn.myanimelist.net/images/anime/1690/97048.jpg  https://www.youtube.com/embed/laFq2ANWlXc
+2  13125          Shinsekai yori                     新世界より   TV    https://cdn.myanimelist.net/images/anime/12/36775.jpg  https://www.youtube.com/embed/oYWBoSDpwdQ
+3  11061  Hunter x Hunter (2011)  HUNTER×HUNTER（ハンター×ハンター）   TV  https://cdn.myanimelist.net/images/anime/1337/99013.jpg  https://www.youtube.com/embed/D9iTQRB4XRk
+4   9253             Steins;Gate               STEINS;GATE   TV     https://cdn.myanimelist.net/images/anime/5/73199.jpg  https://www.youtube.com/embed/27OZc-ku6is

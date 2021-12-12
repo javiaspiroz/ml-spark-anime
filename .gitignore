@@ -4,3 +4,7 @@ dataset_valoraciones_anime/rating_complete_original.csv
 message.py
 dataset_valoraciones_anime/rating_red.csv
 output/
+output/peliculas.html
+output/peliculas.txt
+output/series.html
+output/series.txt

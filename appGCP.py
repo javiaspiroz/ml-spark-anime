@@ -4,8 +4,10 @@ from pyspark.ml.recommendation import ALS
 from pyspark.sql import SparkSession
 import time, requests
 from google.cloud import storage
+
 pd.options.mode.chained_assignment = None  # default='warn'
 pd.set_option("display.max_columns", None) # Para imprimir completamente el datframe de pandas
+# Creamos conexion con el bucket de GCP
 storage_client = storage.Client()
 bucket = storage_client.bucket("bucket-gvd-21957644")
 

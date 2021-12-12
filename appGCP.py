@@ -3,8 +3,11 @@ from pyspark.ml.evaluation import RegressionEvaluator
 from pyspark.ml.recommendation import ALS
 from pyspark.sql import SparkSession
 import time, requests
+from google.cloud import storage
 pd.options.mode.chained_assignment = None  # default='warn'
 pd.set_option("display.max_columns", None) # Para imprimir completamente el datframe de pandas
+storage_client = storage.Client()
+bucket = storage_client.bucket("bucket-gvd-21957644")
 
 # Función para crear los archivos .txt y HTML
 def guardar(df, name):
@@ -41,19 +44,23 @@ def guardar(df, name):
     txt = open('output/'+name+'.txt', 'w', encoding='utf8')
     txt.write(df.to_string())
     txt.close()
+    blob = bucket.blob("output/{}.txt".format(name))
+    blob.upload_from_filename("output/{}.txt".format(name))
     # Creamos el fichero HTML y añadimos sus columnas al DF
     htmlDF['Image'] = imagesHTML
     htmlDF['Trailer'] = videosHTML
     # print(htmlDF)
-    htmlDF.to_html("output/{}.html".format(name),escape=False)
+    htmlDF.to_html("output/{}.html".format(name),escape=False, encoding='utf8')
+    blob = bucket.blob("output/{}.html".format(name))
+    blob.upload_from_filename("output/{}.html".format(name))
 
 
 spark = SparkSession.builder.master("local[*]").getOrCreate()
 
 # Leo los CSVs
-animes = spark.read.csv("dataset_valoraciones_anime/anime.csv", header=True, inferSchema=True, sep=",", encoding="utf8", escape="\"")
+animes = spark.read.csv("gs://bucket-gvd-21957644/dataset_valoraciones_anime/anime.csv", header=True, inferSchema=True, sep=",", encoding="utf8", escape="\"")
 # animes.show()
-ratings = spark.read.csv("dataset_valoraciones_anime/rating_red.csv", header=True, inferSchema=True, sep=",")
+ratings = spark.read.csv("gs://bucket-gvd-21957644/dataset_valoraciones_anime/rating_red.csv", header=True, inferSchema=True, sep=",")
 # ratings.show()
 
 # Dividimos los dataframes en test y training

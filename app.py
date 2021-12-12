@@ -53,7 +53,7 @@ spark = SparkSession.builder.master("local[*]").getOrCreate()
 # Leo los CSVs
 animes = spark.read.csv("dataset_valoraciones_anime/anime.csv", header=True, inferSchema=True, sep=",", encoding="utf8", escape="\"")
 # animes.show()
-ratings = spark.read.csv("dataset_valoraciones_anime/rating_red.csv", header=True, inferSchema=True, sep=",")
+ratings = spark.read.csv("dataset_valoraciones_anime/rating_complete.csv", header=True, inferSchema=True, sep=",")
 # ratings.show()
 
 # Dividimos los dataframes en test y training

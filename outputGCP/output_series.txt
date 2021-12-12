@@ -1,0 +1,6 @@
+      ID                              Name               Japanese name Type                                                    Image                                    Trailer
+0   5114  Fullmetal Alchemist: Brotherhood  鋼の錬金術師 FULLMETAL ALCHEMIST   TV  https://cdn.myanimelist.net/images/anime/1223/96541.jpg  https://www.youtube.com/embed/--IcmZkvL0Q
+1  11061            Hunter x Hunter (2011)    HUNTER×HUNTER（ハンター×ハンター）   TV  https://cdn.myanimelist.net/images/anime/1337/99013.jpg  https://www.youtube.com/embed/D9iTQRB4XRk
+2  28977                          Gintama°                         銀魂°   TV     https://cdn.myanimelist.net/images/anime/3/72078.jpg                                       None
+3   9253                       Steins;Gate                 STEINS;GATE   TV     https://cdn.myanimelist.net/images/anime/5/73199.jpg  https://www.youtube.com/embed/27OZc-ku6is
+4    263                    Hajime no Ippo        はじめの一歩 THE FIGHTING!   TV     https://cdn.myanimelist.net/images/anime/4/86334.jpg                                       None
